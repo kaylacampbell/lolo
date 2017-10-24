@@ -1,0 +1,42 @@
+<?php
+/*
+Template Name: Ciao
+*/
+get_header(); ?>
+
+<?php get_template_part('template-part', 'head'); ?>
+
+
+<!-- start content container -->
+<div class="row content">
+
+    <div class="col-md-12 main">
+
+        <?php // theloop
+        if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+            <?php the_content(); ?>
+            <?php wp_link_pages(); ?>
+
+        <?php endwhile; ?>
+        <?php else: ?>
+
+            <?php get_404_template(); ?>
+
+        <?php endif; ?>
+
+    </div>
+</div>
+
+<div>
+<img src="http://www.laurenchristinehenno.com/wp-content/uploads/2017/06/desk-web-ciao.jpg" class="ciao" width="60%"/>
+<ui class="ciaolist"><li>+1 805 698 3523</li><br><br>
+<li><a title="Email" href="mailto:ciao@laurenchristinehenno.com?Subject=Inquiry" target="_blank">ciao@laurenchristinehenno.com </li><br><br>
+<li>santa barbara, ca</li><br><br><br>
+</ul>
+</div>
+
+
+<!-- end content container -->
+
+<?php get_footer(); ?>
