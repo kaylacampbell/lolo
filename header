@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+
+
+<head>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="shortcut icon" href="<?php echo get_site_url(); ?>/favicon.ico" />
+    <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <?php wp_head(); ?>
+
+
+
+</head>
+
+<body <?php body_class(); ?>>
+
+
+
+  <header>
+  <div class="wrapper">
+
+  <h1 class="menu">
+
+ <input id="button" type="image" src="http://www.laurenchristinehenno.com/wp-content/uploads/2017/06/hamburger2.png" onclick="openNav()">
+
+<div id="d3">
+    <input id="button" type="image" src="http://www.laurenchristinehenno.com/wp-content/uploads/2017/08/close3.png" onclick="closeNav()">
+    <br>
+    <br>
+    <br>
+  <div class="sidenav">
+	<br>
+    <a href="http://www.laurenchristinehenno.com/lolos-portfolio/"> &nbsp; &nbsp; - p o r t f o l i o</a><br>
+    <a href="http://www.laurenchristinehenno.com/meet-lolo/"> &nbsp; &nbsp; - m e e t &nbsp; l o l o</a><br>
+    <a href="http://www.laurenchristinehenno.com/instagram/"> &nbsp; &nbsp; - i n s t a </a><br>
+    <a href="http://www.laurenchristinehenno.com/press/"> &nbsp; &nbsp; - p r e s s </a><br>
+    <a href="http://www.laurenchristinehenno.com/ciao/"> &nbsp; &nbsp; - c i a o</a>
+</div>
+</div>
+
+</h1>
+
+
+
+<font face="Quicksand"> <h1 class="lch"> <a href="http://www.laurenchristinehenno.com/"> <img src="http://www.laurenchristinehenno.com/wp-content/uploads/2017/07/laurenchristinehennologo.png" width="42%" /></a></font> </h1>
+
+<h1 class="lolo"> <a href="http://www.laurenchristinehenno.com/shop-lolo"/> <img src="http://www.laurenchristinehenno.com/wp-content/uploads/2017/07/shoplolologo.png" width="75%"/></a></h1>
+ ‎
+
+  </div>
+
+  </header>
+
+<script>
+var button = document.getElementById("button");
+var d3 = document.getElementById("d3");
+function openNav() {
+  button.style.display="none";
+  d3.style.display="block";
+}
+
+function closeNav() {
+  button.style.display="inline-block";
+  d3.style.display="none";
+}
+</script>
