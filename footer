@@ -1,0 +1,58 @@
+<?php
+/**
+ * The template for displaying the footer
+ *
+ * Contains the closing of the #content div and all content after.
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package WordPress
+ * @subpackage Twenty_Seventeen
+ * @since 1.0
+ * @version 1.2
+ */
+
+?>
+
+<br>
+  <div class="footnote">
+  				©2017 Lauren Christine Henno<br>
+  			</div>
+
+  <ul class="socialmedia">
+  					<li><a title="Instagram" href="http://instagram.com/laurenchristinehenno" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/socialmedia/instagram.png"></a></li> &nbsp;
+
+  					<li><a title="Pinterest" href="https://www.pinterest.com/laurenhenno/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/socialmedia/pinterest.png"></a></li> &nbsp;
+
+    				<li><a title="Houzz" href="http://www.houzz.com/pro/laurenchristinehenno" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/socialmedia/houzz.png"></a></li> &nbsp;
+
+         			<li><a title="Email" href="mailto:ciao@laurenchristinehenno.com?Subject=Inquiry" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/img/socialmedia/mail.png"></a></li> &nbsp;
+  				</ul>
+
+
+        <?php get_template_part('template-part', 'footernav'); ?>
+    </div>
+
+</div>
+<!-- end main container -->
+
+<?php wp_footer(); ?>
+
+<!-- Start of StatCounter Code for Weebly -->
+<script type="text/javascript">
+var sc_project=11412289; 
+var sc_invisible=1; 
+var sc_security="aa1102aa"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+</script>
+<noscript><div class="statcounter"><a title="web analytics"
+href="http://statcounter.com/" target="_blank"><img class="statcounter"
+src="//c.statcounter.com/11412289/0/aa1102aa/1/" alt="web
+analytics"></a></div></noscript>
+<!-- End of StatCounter Code for Weebly -->
+
+</body>
+</html>
