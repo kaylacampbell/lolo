@@ -1,0 +1,413 @@
+/*
+Theme Name: Lolo
+Template Theme URI: http://my-website.com/lolo
+Author: Kayla
+Description: A clean yet stylish and functional theme.
+Version: 1.0
+License: GNU General Public License v3
+License URI: http://www.gnu.org/licenses/gpl.html
+*/
+
+html {
+	font-family: Quicksand;
+ 	font-size:12px;
+}
+
+body {
+ 	transition: background-color .5s;
+}
+
+/* Header */
+
+header {
+  border-bottom: 1px solid #E1E0E1;
+   margin-left: 35px;
+   margin-right: 35px;
+   height: 53px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    z-index: 1;
+    font-size: 36px;
+    background-color: #ffffff;
+    opacity: 0.8;
+    transition: 0.5s;
+
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    font-weight: lighter;
+
+}
+
+.sidenav a:hover, .offcanvas a:focus {
+    color: #BCBCBC;
+}
+
+
+#d3 {
+    display: none;
+}
+
+.lch {
+  padding-top: 11px;
+  padding-left: 13px;
+  width: 85%;
+  min-width: 500px;
+  max-width: 1175px;
+  position:relative;
+  font-family: Quicksand;
+ 
+}
+
+.lolo {
+  position: relative;
+   width: 14%;
+  max-width: 100%;
+  min-width: 20%;
+
+}
+
+.wrapper {
+  display: flex;
+  align-items: content;
+  vertical-align: middle;
+}
+
+div.homeimage {
+   width: 80%;
+   margin-left: 35px;
+   margin-right: 35px;
+  }
+
+h1 {
+margin: 0;
+}
+
+@media only screen and (max-device-width: 540px) {
+h1 {width: 100%;}
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+
+#button {
+  padding-top: 15px;
+}
+
+.menu {
+  width: 5%;
+}
+
+/* Home */
+
+.homeimage {
+margin-top: 20px;
+}
+
+/* Projects */
+
+.parent-container {
+   width: 95%;
+   max-width: 1800px;
+   height: auto;
+   padding: auto;
+   overflow: scroll;
+   overflow-y: hidden;
+   padding-top: 20px;
+   padding-right: 20px;
+   padding-left: 20px;
+   white-space: nowrap;
+   display: inline-block;
+}
+
+.container {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: auto;
+  height: auto;
+  max-width: 1175px;
+}
+
+
+.image {
+  opacity: 1;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  min-width: 80%;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-right: 15px;
+  object-fit: cover;
+  vertical-align: middle;
+}
+
+.parent-container .container .image {
+  width: auto\9; /* IE8 */
+}
+
+/* Portfolio */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0px;
+  background-color: #d3d3d3;
+  -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+}
+
+.parent-imgcontainer {
+            width: 95%;
+            max-width: 1800px;
+            height: 100%;
+            padding: auto;
+            overflow: auto;
+            overflow-y: hidden;
+  	    padding-top: 20px;
+            margin-left: 35px;
+            padding-right: 35px;
+            white-space: nowrap
+}
+
+.imgcontainer {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.topimage {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-right: 15px;
+}
+
+.middleimg {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.imgcontainer:hover .topimage {
+  opacity: 0.3;
+}
+
+.imgcontainer:hover .middleimg {
+  opacity: 1;
+}
+
+/* Footer */
+
+.footnote {
+  position: relative;
+  padding-left: 50px;
+  font-size: 10px;
+  float:left;
+  color: black;
+
+}
+
+.socialmedia {
+  float:right;
+  padding-right:50px
+	}
+
+  a:link {
+      text-decoration: none;
+  	color: black;
+  }
+
+  a:visited { 
+  text-decoration: none; 
+  color: black; 
+}
+
+  li {
+    display: inline;
+    margin-top: 10px;
+
+  }
+
+/* Insta */
+
+.instagram {
+margin-top: 20px;
+}
+
+/* Printed */
+
+.printed-parent-container {
+            width: 100%;
+            max-width: 1175px;
+            height: 100%;
+			padding: auto;
+            margin-left: 45px;
+            margin:right: 45px;
+   	    padding-top:20px;
+
+}
+.printed-container {
+  position: relative;
+  display: inline-block;
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.printed-image {
+  opacity: 1;
+  display: block;
+  width: 90%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sb-image {
+  opacity: 1;
+  display: block;
+  width: 90%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+  padding-right: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.sb-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 49%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+.printed-middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 49%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+
+.printed-container:hover .printed-image {
+  opacity: 0.3;
+}
+
+.printed-container:hover .printed-middle {
+  opacity: 1;
+}
+
+/* Ciao */
+
+
+.ciao {
+  margin-right: 20px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+
+.ciaolist {
+list-style-type: none;
+display:inline-block;
+}
+
+.divwrapper {
+  display: flex;
+}
+
+/* Meet Lolo */
+
+.meetlolo {
+margin-top: 20px;
+}
+
+/* Test */
+
+.parent-box {
+   padding-top: 50px;
+   margin-right: 50px;
+   margin-left: 50px;
+}
+
+/* Clone */
+
+.box { 
+   background:#fff; 
+   box-shadow: 1px 1px 10px #fff; 
+   margin: 50px; 
+   text-align: center; 
+   position: relative;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   margin-bottom: 20px !important;
+   width: auto;
+}
+
+.scrolls { 
+   overflow-x: scroll;
+   overflow-y: hidden;
+   height: 700px;
+   white-space:nowrap
+} 
+
+.fillDiv img { 
+   box-shadow: 1px 1px 10px #fff; 
+   margin: 2px;
+   max-height: 500px;
+   cursor: pointer;
+   display:inline-block;
+   *display:inline;
+   *zoom:1;
+   vertical-align:top;
+}
+	
+.fill {
+   margin-right: 35px;
+   width: auto;
+   height: 100%;
+}
+
+/* Supsystic */
+
+.supsystic {
+margin-top: 50px;
+}
